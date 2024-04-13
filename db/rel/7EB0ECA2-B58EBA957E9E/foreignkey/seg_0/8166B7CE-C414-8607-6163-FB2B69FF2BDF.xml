@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8166B7CE-C414-8607-6163-FB2B69FF2BDF" containerWithKeyObject="D0520AEA-4B9D-070D-AE7E-6C7B3BF50FCB" localFKIndex="427B1E68-A6D6-5796-1779-F9A32BF1D63B" name="detalle_cobranza_cobrador_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:23:15 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<referredTableLongName>cobrador</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>75FD0FA5-2D2A-FD52-4B4D-928B2335A6C7</referredTableID>
+<keyObject>17DA28D3-9DC2-5215-DC8F-E919A15ED162</keyObject>
+<referredKeyID>17DA28D3-9DC2-5215-DC8F-E919A15ED162</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_cobrador</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

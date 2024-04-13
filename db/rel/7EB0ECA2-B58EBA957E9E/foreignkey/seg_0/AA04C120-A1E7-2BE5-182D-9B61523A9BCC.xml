@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AA04C120-A1E7-2BE5-182D-9B61523A9BCC" containerWithKeyObject="75FD0FA5-2D2A-FD52-4B4D-928B2335A6C7" localFKIndex="70862074-CADF-5A53-1BBC-772D1715426F" name="cobrador_prestamista_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 23:04:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<referredTableLongName>prestamista</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C37CCC3C-F4C2-BBC4-6A1B-DF9771B69990</referredTableID>
+<keyObject>05ED10DD-EFF0-7087-3907-752D361B2363</keyObject>
+<referredKeyID>05ED10DD-EFF0-7087-3907-752D361B2363</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_prestamista</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

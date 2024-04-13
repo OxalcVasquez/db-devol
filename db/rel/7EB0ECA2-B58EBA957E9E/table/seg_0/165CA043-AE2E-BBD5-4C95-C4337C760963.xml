@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="165CA043-AE2E-BBD5-4C95-C4337C760963" name="tipo_prestamo">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:10:14 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_prestamo" id="9F711BF5-260C-4AB8-C509-BD8A1C76C12B">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:11:10 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="CE65F928-D9A7-8643-C300-91637FD9B5DA">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:11:10 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="990A34A5-EBBD-01F0-AB94-ED18ED21B51D">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:11:10 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7426FE0-0834-D12B-FD69-9FEE463BA1D6" name="tipo_prestamo_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:11:10 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F711BF5-260C-4AB8-C509-BD8A1C76C12B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

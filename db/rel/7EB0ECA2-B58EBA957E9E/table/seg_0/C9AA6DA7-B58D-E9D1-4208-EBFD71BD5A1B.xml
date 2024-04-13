@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9AA6DA7-B58D-E9D1-4208-EBFD71BD5A1B" name="cliente">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:48:35 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cliente" id="CE45DE91-6872-64D9-2138-ED908D64E6E1">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:52:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cliente_id_cliente</notNullConstraintName>
+</Column>
+<Column name="dni" id="3642156A-F0D4-FEF9-A708-96AEFF9C464C">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:52:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<containsPII>true</containsPII>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_cliente_dni</notNullConstraintName>
+</Column>
+<Column name="nombres" id="1E864073-BF8F-FC27-B698-081C573BA59D">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:52:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="CAA560FC-44DD-44B0-5E60-BC114DD336B1">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:52:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="AD4EBFF4-E563-F331-8451-785E7F06E4A1">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:52:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="78F1F7EE-6E39-FECD-1A35-50387359765B">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:52:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_prestamista" id="B4545AD8-D0B2-A08D-EEFA-2ED376F16337">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 23:05:56 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7490F88D-5BE1-D74A-3B23-E8F758C9FF88" referredColumn="8430AA3A-BC07-14BF-839C-A7073D8865BE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FCD0B0E3-1E1A-9783-0FC9-031219FFE5C4" name="cliente_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 17:52:50 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE45DE91-6872-64D9-2138-ED908D64E6E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFE59083-37B7-2CDB-3C5E-0170E6B1D62C" name="cliente_prestamista_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 23:05:56 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4545AD8-D0B2-A08D-EEFA-2ED376F16337"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

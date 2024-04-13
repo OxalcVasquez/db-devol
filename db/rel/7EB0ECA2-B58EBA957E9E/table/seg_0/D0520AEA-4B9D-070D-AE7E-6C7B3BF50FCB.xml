@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0520AEA-4B9D-070D-AE7E-6C7B3BF50FCB" name="detalle_cobranza">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:17:48 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detalle_cobranza" id="E99E7601-8400-B050-7A15-BE9A822770BE">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:21:18 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="35376B67-A45F-C7BB-379C-50F25F80BB4F">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:21:18 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto_cobrado" id="29667B84-2B33-0C7F-B39E-CAF9DE6D4128">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:21:18 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,18,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_prestamo" id="459B6BBA-A65F-F354-115F-E5F71641E725">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:22:06 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE20A640-E618-3EB3-03AA-1991BD0306DB" referredColumn="D9870755-6D11-0E6E-94FC-C045D38F68D4"/>
+</associations>
+</Column>
+<Column name="id_cobrador" id="44516632-CAF2-E74C-09D0-2D5EC4C22779">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:23:15 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8166B7CE-C414-8607-6163-FB2B69FF2BDF" referredColumn="693BC10A-2F45-E511-AA92-6E894BAF7228"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="693311E8-6FA1-8CDC-3E02-D34226E9C59C" name="detalle_cobranza_PK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:21:18 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E99E7601-8400-B050-7A15-BE9A822770BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC29C4FF-FEBA-5DE4-E47D-0DAE2A7FEA15" name="detalle_cobranza_prestamo_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:22:06 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="459B6BBA-A65F-F354-115F-E5F71641E725"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="427B1E68-A6D6-5796-1779-F9A32BF1D63B" name="detalle_cobranza_cobrador_FK">
+<createdBy>usuario</createdBy>
+<createdTime>2023-02-24 18:23:15 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44516632-CAF2-E74C-09D0-2D5EC4C22779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
